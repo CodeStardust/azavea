@@ -1,0 +1,22 @@
+#!/bin/python
+
+def int_count(a):
+    pos_list = [ ]
+    neg_total = 0
+    array = ()
+
+    # See if anything is in the array
+    if (a is None) or (a == [ ]): 
+       return array
+
+    # Check to see if integer is positive or negative then do math 
+    for i in a:
+        if i >= 0:
+            pos_list.append(i)
+        else:
+            neg_total += i
+    return (len(pos_list), neg_total) 
+
+
+
+    
